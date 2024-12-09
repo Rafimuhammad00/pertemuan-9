@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 20px;
+        }
+        label {
+            margin-right: 10px;
+        }
+    </style>
+    <script>
+        function setBg() {
+            const warna = document.getElementById("warna").value;
+            document.body.style.backgroundColor = warna;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="warna">Pilih warna:</label>
+        <select id="warna" onchange="setBg()">
+            <option value="red">Merah</option>
+            <option value="yellow">Kuning</option>
+            <option value="green">Hijau</option>
+            <option value="purple">Ungu</option>
+            <option value="cyan">Cyan</option>
+        </select>
+    </form>
+</body>
+</html>
